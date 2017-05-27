@@ -11,6 +11,20 @@ Ext.define('Admin.store.NavigationTree', {
         expanded: true,
         children: [
             {
+                /*text: 'Canchas',
+                iconCls: 'x-fa fa-desktop',
+                rowCls: 'nav-tree-badge nav-tree-badge-new',
+                viewType: 'admincanchas',
+                routeId: 'canchas', // routeId defaults to viewType
+                leaf: true*/
+
+                text: 'Canchas',
+                iconCls: 'x-fa fa-check',
+                viewType: 'admincanchas',
+                routeId: 'canchas',
+                leaf: true
+            },
+            /*{
                 text: 'Dashboard',
                 iconCls: 'x-fa fa-desktop',
                 rowCls: 'nav-tree-badge nav-tree-badge-new',
@@ -115,7 +129,7 @@ Ext.define('Admin.store.NavigationTree', {
                 iconCls: 'x-fa fa-pie-chart',
                 viewType: 'charts',
                 leaf: true
-            }
+            }*/
         ]
     }
 });

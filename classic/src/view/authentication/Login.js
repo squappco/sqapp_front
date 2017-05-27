@@ -10,7 +10,8 @@ Ext.define('Admin.view.authentication.Login', {
         'Ext.button.Button'
     ],
 
-    title: 'Let\'s Log In',
+    //title: 'Let\'s Log In',
+    title: 'Squapp',
     defaultFocus: 'authdialog', // Focus the Auth Form to force field focus as well
 
     items: [
@@ -34,9 +35,10 @@ Ext.define('Admin.view.authentication.Login', {
             items: [
                 {
                     xtype: 'label',
-                    text: 'Sign into your account'
+                    html: '<div style="font-size: 30px; font-weight: bold;"><center>Registrarse<center><div>',
+                    height: 50,
                 },
-                {
+                /*{
                     xtype: 'textfield',
                     cls: 'auth-textbox',
                     name: 'userid',
@@ -102,6 +104,28 @@ Ext.define('Admin.view.authentication.Login', {
                     xtype: 'box',
                     html: '<div class="outer-div"><div class="seperator">OR</div></div>',
                     margin: '10 0'
+                },*/
+                {
+                    xtype: 'button',
+                    scale: 'large',
+                    ui: 'facebook',
+                    iconAlign: 'right',
+                    iconCls: 'x-fa fa-facebook',
+                    text: 'Continuar con Facebook',
+                    listeners:
+                    {
+                        //click: 'onFaceBookLogin'
+                        click: function()
+                        {
+                            console.log('Arguments:', arguments)
+                            alert('Hola Pedro')
+                        }
+                    }
+                },
+                {
+                    xtype: 'box',
+                    html: '<div class="outer-div"><div class="seperator">Estoy Registrado</div></div>',
+                    margin: '10 0'
                 },
                 {
                     xtype: 'button',
@@ -109,12 +133,18 @@ Ext.define('Admin.view.authentication.Login', {
                     ui: 'facebook',
                     iconAlign: 'right',
                     iconCls: 'x-fa fa-facebook',
-                    text: 'Login with Facebook',
-                    listeners: {
-                        click: 'onFaceBookLogin'
+                    text: 'Iniciar sesión con Facebook',
+                    listeners:
+                    {
+                        //click: 'onFaceBookLogin'
+                        click: function()
+                        {
+                            console.log('Arguments:', arguments)
+                            alert('Hola Pedro')
+                        }
                     }
                 },
-                {
+                /*{
                     xtype: 'box',
                     html: '<div class="outer-div"><div class="seperator">OR</div></div>',
                     margin: '10 0'
@@ -129,7 +159,7 @@ Ext.define('Admin.view.authentication.Login', {
                     listeners: {
                         click: 'onNewAccount'
                     }
-                }
+                }*/
             ]
         }
     ],

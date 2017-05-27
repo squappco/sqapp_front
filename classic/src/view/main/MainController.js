@@ -137,9 +137,11 @@ Ext.define('Admin.view.main.MainController', {
         }
     },
 
-    onMainViewRender:function() {
-        if (!window.location.hash) {
-            this.redirectTo("dashboard");
+    onMainViewRender:function()
+    {
+        if (!window.location.hash)
+        {
+            this.redirectTo("login");
         }
     },
 
