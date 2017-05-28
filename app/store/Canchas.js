@@ -1,10 +1,19 @@
-Ext.define('MyApp.store.Canchas', {
+Ext.define('Admin.store.Canchas', {
     extend: 'Ext.data.Store',
 
-    alias: 'store.Canchas',
+    alias: 'store.canchas',
+    //storeId: 'canchas',
+    //id: 'canchas',
 
     fields: [
-        'name', 'email', 'phone'
+        'name', 
+        'address', 
+        'startTime',
+        'finishTime',
+        'serviceTime',
+        'lat',
+        'lng',
+        'score'
     ],
 
     data: { items: [
