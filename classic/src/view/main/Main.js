@@ -93,7 +93,7 @@ Ext.define('Admin.view.main.Main', {
                 },
                 {
                     xtype: 'tbtext',
-                    text: 'Goff Smith',
+                    text: 'El campinto',
                     cls: 'top-user-name'
                 },
                 {
