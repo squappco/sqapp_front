@@ -57,15 +57,15 @@ Ext.define('Admin.view.dashboard.Dashboard', {
             dataProgress:[
                 {
                     name: 'Marzo',
-                    value: '20%'
+                    value: '$20.000'
                 },
                 {
                     name: 'Abril',
-                    value: '68%'
+                    value: '$68.000'
                 },
                 {
                     name: 'Mayo',
-                    value: '12%'
+                    value: '$ 12.000'
                 },
             ]
         },
