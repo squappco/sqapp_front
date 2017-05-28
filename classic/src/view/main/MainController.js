@@ -141,7 +141,7 @@ Ext.define('Admin.view.main.MainController', {
     {
         if (!window.location.hash)
         {
-            this.redirectTo("login");
+            this.redirectTo("canchas");
         }
     },
 
