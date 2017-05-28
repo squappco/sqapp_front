@@ -3,7 +3,7 @@ Ext.define('Admin.view.main.Main', {
 
     requires: [
         'Ext.button.Segmented',
-        'Ext.list.Tree'
+        'Ext.list.Tree',
     ],
 
     controller: 'main',
@@ -32,7 +32,9 @@ Ext.define('Admin.view.main.Main', {
                     xtype: 'component',
                     reference: 'senchaLogo',
                     cls: 'sencha-logo',
-                    html: '<div class="main-logo"><img src="resources/images/company-logo.png">Sencha</div>',
+                    html: `<div class="main-logo" style="position: relative;height: 66%;">
+                            <img src="resources/images/logoBlanco.png" style="height: 100%;">Squapp
+                            </div>`,
                     width: 250
                 },
                 {
@@ -43,7 +45,7 @@ Ext.define('Admin.view.main.Main', {
                     handler: 'onToggleNavigationSize'
                 },
                 '->',
-                {
+                /*{
                     xtype: 'segmentedbutton',
                     margin: '0 16 0 0',
 
@@ -81,11 +83,11 @@ Ext.define('Admin.view.main.Main', {
                     href: '#faq',
                     hrefTarget: '_self',
                     tooltip: 'Help / FAQ\'s'
-                },
+                },*/
                 {
                     iconCls:'x-fa fa-th-large',
                     ui: 'header',
-                    href: '#profile',
+                    //href: '#profile',
                     hrefTarget: '_self',
                     tooltip: 'See your profile'
                 },

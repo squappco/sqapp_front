@@ -1,11 +1,10 @@
 Ext.define('Admin.store.Canchas', {
     extend: 'Ext.data.Store',
-
     alias: 'store.canchas',
-    //storeId: 'canchas',
-    //id: 'canchas',
+    autoLoad:true,
 
     fields: [
+        'id',
         'name', 
         'address', 
         'startTime',
@@ -13,21 +12,18 @@ Ext.define('Admin.store.Canchas', {
         'serviceTime',
         'lat',
         'lng',
-        'score'
+        'score',
+        'client'
     ],
-
-    data: { items: [
-        { name: 'Jean Luc', email: "jeanluc.picard@enterprise.com", phone: "555-111-1111" },
-        { name: 'Worf',     email: "worf.moghsson@enterprise.com",  phone: "555-222-2222" },
-        { name: 'Deanna',   email: "deanna.troi@enterprise.com",    phone: "555-333-3333" },
-        { name: 'Data',     email: "mr.data@enterprise.com",        phone: "555-444-4444" }
-    ]},
-
-    proxy: {
-        type: 'memory',
-        reader: {
-            type: 'json',
-            rootProperty: 'items'
-        }
+    
+    proxy:
+    {
+        type: 'rest',
+        reader:
+        {
+            rootProperty: 'data',
+            type: 'json'
+        },
+        url: urlAPI + 'fields',
     }
 });

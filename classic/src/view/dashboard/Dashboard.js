@@ -14,11 +14,11 @@ Ext.define('Admin.view.dashboard.Dashboard', {
     layout: 'responsivecolumn',
     
     listeners: {
-        hide: 'onHideView'
+        //hide: 'onHideView'
     },
 
     items: [
-        {
+        /*{
             xtype: 'network',
 
             // 60% width when viewport is big enough,
@@ -49,10 +49,44 @@ Ext.define('Admin.view.dashboard.Dashboard', {
         {
             xtype: 'todo',
             userCls: 'big-60 small-100'
+        },*/
+        {
+            xtype: 'services', 
+            title: 'Ingreso Mensual - Trimestre',
+            userCls: 'big-50 small-100',
+            dataProgress:[
+                {
+                    name: 'Marzo',
+                    value: '20%'
+                },
+                {
+                    name: 'Abril',
+                    value: '68%'
+                },
+                {
+                    name: 'Mayo',
+                    value: '12%'
+                },
+            ]
         },
         {
             xtype: 'services',
-            userCls: 'big-40 small-100'
+            title: 'Ocupación mensual - Trimestre',
+            userCls: 'big-50 small-100',
+            dataProgress:[
+                {
+                    name: 'Marzo',
+                    value: '20%'
+                },
+                {
+                    name: 'Abril',
+                    value: '68%'
+                },
+                {
+                    name: 'Mayo',
+                    value: '12%'
+                },
+            ]
         }
     ]
 });

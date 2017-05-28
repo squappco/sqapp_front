@@ -10,6 +10,9 @@ Ext.define('Admin.view.canchas.CanchasController', {
     {
         alert('Hola Pedro')
     },
+
+    onHideView: function () {
+    }
     /*onRefreshToggle: function(tool, e, owner) {
         var store, runner;
 
